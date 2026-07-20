@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Groq Mock Interview Generator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Mock Interview Generator</h1>
+        <form id="interviewForm">
+            <div class="form-group">
+                <label for="role">Job Role</label>
+                <input type="text" id="role" required placeholder="e.g., Python Developer">
+            </div>
+            
+            <div class="form-group">
+                <label for="experience">Experience Level</label>
+                <select id="experience">
+                    <option value="Junior">Junior</option>
+                    <option value="Mid-Level">Mid-Level</option>
+                    <option value="Senior">Senior</option>
+                </select>
+            </div>
+            
+            <div class="form-group">
+                <label for="topic">Key Topic / Skill</label>
+                <input type="text" id="topic" required placeholder="e.g., API Architecture, Memory Management">
+            </div>
+            
+            <button type="submit" id="generateBtn">Generate Interview Questions</button>
+        </form>
+        
+        <div id="loading" class="hidden">Generating optimal questions via Groq...</div>
+        <div id="result" class="hidden"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
