@@ -1,0 +1,6 @@
+{
+  "name": "mock-interview-generator",
+  "version": "1.0.0",
+  "description": "Vanilla JS Mock Interview Generator deployed on Vercel",
+  "type": "module"
+}
